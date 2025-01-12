@@ -1,1 +1,20 @@
+User-agent: *
+Disallow: /private/         # Bloque l'accès aux répertoires sensibles
+Disallow: /tmp/             # Bloque l'accès au répertoire temporaire
+Disallow: /cgi-bin/         # Bloque les scripts CGI
+
+Allow: /                    # Permet l'accès aux pages publiques
+Allow: /sitemap.xml         # Autorise les moteurs à indexer le sitemap
+
+User-agent: Googlebot
+Allow: /                    # Permet à Google de tout crawler
+Allow: /images/             # Priorise l'accès aux images
+Allow: /sitemap.xml
+
+User-agent: Bingbot
+Allow: /                    # Permet à Bing de tout crawler
+
+Sitemap: https://clairvoyancemedium.github.io/Cartomanzia-via-email-affidabile-e-veloce.github.io/sitemap.xml
+
+Host: https://clairvoyancemedium.github.io/Cartomanzia-via-email-affidabile-e-veloce.github.io
 
